@@ -28,9 +28,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+  Web tokens are used for for many things but with SPAs they are commonly used to authenticate the client as a user when communicating with a server.
 2. What steps can you take in your web apps to keep your data secure?
+  Developers can use protected routes and client-side authentication with JWT to keep their apps secure. When using a library like JWT.io, it is also important to stay up to date on any vlunerabilities it might have. When and if a vulnerability comes up, it is important to update the library fast and often.
 3. Describe how web servers work.
+  Web servers are computers that store code for websites. (A 'Web server' can also refer to the code that runs on a server machine/computer.) If the website is a client-side-rendered applicaiton, the client application can interface with the web server to fetch, post, delete, and update data.
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+  The C or 'Create' in CRUD refers to posting new data to the server with 'post'. The R/Read refers to getting data with 'get'. The U/Update refers to putting data with 'put'. And, the D/delete refers to deleting data with the 'delete' method.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

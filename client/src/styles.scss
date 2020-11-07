@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
+html {
+  background: #ff9966;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  box-sizing: border-box;
+  max-height: fit-content;
+}
+
 html,
 body,
 #root,
@@ -13,8 +22,6 @@ body,
 .App {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  display: flex;
-
   svg {
     height: 100%;
   }
@@ -22,6 +29,11 @@ body,
 
 .spacer {
   height: 100%;
+}
+
+.bubbles-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .bubble-wrap {
@@ -33,7 +45,7 @@ body,
 .colors-wrap {
   height: 100%;
   width: 300px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   ul {
     list-style: none;
@@ -47,6 +59,10 @@ body,
       width: 100%;
     }
   }
+}
+
+.create-color-button {
+  display: inline;
 }
 
 .delete {
