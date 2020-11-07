@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { postLogin } from '../api/postLogin';
 import { isLogin } from "../utils/isLogin";
 
@@ -11,8 +11,6 @@ const intialFormValues = {
 const Login = () => {
   const [formValues, setFormValues] = useState(intialFormValues);
   const { push } = useHistory();
-  // make a post request to retrieve a token from the api
-  // when you have handled the token, navigate to the BubblePage route
 
   // Runs on form submit
   const onSubmit = (evt) => {
@@ -20,8 +18,8 @@ const Login = () => {
 
     const credentials = { username: formValues.username, password: formValues.password };
     postLogin({ ...credentials })
-      .then(resp => {
-        localStorage.setItem('token', resp.data.payload);
+      .then(res => {
+        localStorage.setItem('token', res.data.payload);
         push('/');
       })
       .catch(err => {

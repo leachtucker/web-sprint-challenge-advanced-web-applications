@@ -14,6 +14,6 @@ export const axiosAuth = () => {
         headers: {
             Authorization: token
         },
-        baseURL = base_URL
+        baseURL: base_URL
     });
 };
