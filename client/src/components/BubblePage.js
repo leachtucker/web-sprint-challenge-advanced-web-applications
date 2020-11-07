@@ -6,8 +6,6 @@ import ColorList from "./ColorList";
 
 const BubblePage = () => {
   const [colorList, setColorList] = useState([]);
-  // fetch your colors data from the server when the component mounts
-  // set that data to the colorList state property
 
   // Runs when the component first mounts
   useEffect(() => {
@@ -21,10 +19,12 @@ const BubblePage = () => {
   }, []);
 
   return (
-    <>
-      <ColorList colors={colorList} updateColors={setColorList} />
-      <Bubbles colors={colorList} />
-    </>
+    <div className="container is-flex is-flex-direction-column">
+      <div className="bubbles-container is-flex is-flex-direction-row is-flex-wrap-wrap-reverse is-justify-content-space-between">
+        <ColorList colors={colorList} updateColors={setColorList} />
+        <Bubbles colors={colorList} />
+      </div>
+    </div>
   );
 };
 

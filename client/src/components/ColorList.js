@@ -48,8 +48,8 @@ const ColorList = ({ colors, updateColors }) => {
   };
 
   return (
-    <div className="colors-wrap">
-      <p>colors</p>
+    <div className="colors-wrap box">
+      <p className="title is-5">colors</p>
       <ul>
         {colors.map(color => (
           <li key={color.color} onClick={() => editColor(color)}>

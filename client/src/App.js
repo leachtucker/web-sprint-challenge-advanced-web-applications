@@ -28,9 +28,9 @@ function App() {
         <header className="container py-6">
           <h1 className="title is-1 has-text-white is-half is-inline-block">Bubbles</h1>
         </header>
-        <div className="container is-flex is-justify-content-center is-align-items-center mt-6">
+        <div className="container is-flex is-justify-content-space-center is-align-items-center mt-6">
           {isLoading ?
-            <div className="mt-5 pt-4">
+            <div className="container mt-5 pt-4">
               {Spinner}
             </div> :
             <>
